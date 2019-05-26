@@ -1,0 +1,23 @@
+spring:
+  profiles: default
+  application:
+    name: redsky-client-service
+    
+server:
+  port: 8082
+  servlet:
+    context-path: /rcs
+
+    
+httpconfig:
+  maxHttpConnections: 50
+  maxHttpConnectionsPerRoute: 30
+  connectionTimeout: 8000
+  connectionRequestTimeout: 8000 
+  socketTimeout: 20000
+  maxHttpRetries: 4
+  
+redsky:
+  producturl: http://redsky.com/product
+  priceurl: http://redsky.com/price
+  
